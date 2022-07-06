@@ -36,8 +36,8 @@ def X_check(winX):
             if q==s:
                 flag=True
         return flag     
-choose=input("Do you want to play Tic Tac Toe Game?(Yes/No): ")
-if choose=="Yes" or choose=="yes":
+choice=input("Do you want to play Tic Tac Toe Game?(Yes/No): ").capitalize()
+if choice=="Yes":
     c=1
     pattern_game=""
     pattern_play=""
@@ -93,7 +93,7 @@ if choose=="Yes" or choose=="yes":
             break
     if not x and not o:
         print("Draw!!!")
-elif choose=="No" or choose=="no":
+elif choose=="No":
     print("Thank You!!")
 else:
     raise Exception("ErrorValueInput")
