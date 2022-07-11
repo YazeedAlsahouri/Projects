@@ -5,7 +5,7 @@ def Check_if(n):
                 if not j.isdigit():
                     return False
     return True
-def arithmetic_arranger(problems,option=False):
+def arithmetic_arranger(problems,option="No"):
     if len(problems)<=5:
         for i in problems:
             k=i.split()
