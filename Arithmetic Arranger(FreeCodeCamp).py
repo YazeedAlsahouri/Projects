@@ -13,7 +13,7 @@ def arithmetic_arranger(problems,option=False):
                 flag=Check_if(i)
                 if flag:
                     if len([z for z in k[0] if z.isdigit()])<=4 and len([y for y in k[-1] if y.isdigit()])<=4:
-                        if option:
+                        if option=="Yes":
                             if k[1]=="+":
                                 result=int(k[0])+int(k[-1])
                             else:
@@ -64,5 +64,5 @@ for count in range(count_problems):
         elif "-" in problem:
             problem=problem.replace("-"," - ")
             my_list.append(problem)
-option=bool(input("if you want to show the solution of problems Enter (True) if you dont want Enter (False): ").capitalize())
+option=bool(input("if you want to show the solution of problems Enter (Yes) if you dont want Enter (No): ").capitalize())
 print(arithmetic_arranger(my_list,option))
