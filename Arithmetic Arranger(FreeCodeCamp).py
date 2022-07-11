@@ -64,5 +64,5 @@ for count in range(count_problems):
         elif "-" in problem:
             problem=problem.replace("-"," - ")
             my_list.append(problem)
-option=bool(input("if you want to show the solution of problems Enter (Yes) if you dont want Enter (No): ").capitalize())
+option=(input("if you want to show the solution of problems Enter (Yes) if you dont want Enter (No): ").capitalize())
 print(arithmetic_arranger(my_list,option))
