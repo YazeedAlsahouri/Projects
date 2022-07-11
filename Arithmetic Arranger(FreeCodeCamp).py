@@ -32,7 +32,7 @@ def arithmetic_arranger(problems,option="No"):
                     else:
                         return "Numbers cannot be more than four digits."
                 else:
-                    return "Operator must be '+' or '-'."
+                    return "Numbers must only contain digits"
             else:
                 return"Operator must be (+) or (-)"
     else:
