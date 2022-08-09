@@ -25,7 +25,7 @@ and you have 25 lives in this game!!!""")
        guessing_word2="".join(guessing_word1)
        print(guessing_word2)
     if guessing_word2==random_word:
-        print(f"Congratulation you did it after {counter} times the word is ({random_word})")
+        print(f"Congratulation you did it after {counter} times ,The word is ({random_word})")
 elif choice=="No":
     print("Thank You!!")
 else:
